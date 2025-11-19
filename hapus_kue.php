@@ -1,4 +1,4 @@
-<?php require 'db.php';
+<?php require 'koneksi.php';
 if(!isset($_SESSION['user'])) header("Location: login.php");
 $id=$_GET['id'];
 

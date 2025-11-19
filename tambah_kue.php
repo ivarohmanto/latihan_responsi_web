@@ -1,5 +1,5 @@
 <?php
-require 'db.php';
+require 'koneksi.php';
 
 if(isset($_POST['tambah'])){
     $f = $_FILES['foto'];
