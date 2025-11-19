@@ -20,13 +20,13 @@ if(isset($_POST['edit'])){
     $harga = $_POST['harga'];
     $stok = $_POST['stok'];
 
-    // Jika foto diganti
+    
     if($_FILES['foto']['name'] != ""){
         $f = $_FILES['foto'];
         $nm = time() . "_" . $f['name'];
         move_uploaded_file($f['tmp_name'], "uploads/" . $nm);
 
-        // Hapus foto lama
+        
         if(file_exists("uploads/" . $data['foto'])){
             unlink("uploads/" . $data['foto']);
         }
